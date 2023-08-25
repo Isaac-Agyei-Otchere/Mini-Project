@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,200&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <title></title>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="_img/352-3522093_canopy-logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="bi bi-x-square-fill" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="products.html">PRODUCTS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="bi bi-distribute-vertical" onclick="showMenu()"></i>
+        </nav> 
+        <h1>About Us</h1>          
+    </section>
+
+
+    <!---About Content---->
+    <section class="about-us">
+      <div class="row">
+        <div class="about-col">
+            <h1>We Are One Of The Best Event Planners </h1>
+            <p>Any event done in an outdoor space one way or the other needs tents.<br>Just for the comfort of your guest and any inclement weather<br>You may also need to pay to reserve a tent in case of a bad weather,even if you dont end up using it.</p>
+            <a href="" class="phil-between red-between">EXPLORE NOW</a>
+        </div>
+        <div class="about-col">
+            <img src="_img/about.jpg">
+        </div>
+      </div>
+    </section>
+
+
+   
+    <!----footer---->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Est. 2021<br>BEST AMONGST THE BEST</p>
+        <div class="icons">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-linkedin"></i>
+        </div>
+        <p>Made with <i class="bi bi-exclude"></i> html-css</p>
+
+    </section>
+
+<!----JavaScript--->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+        
+</body>
+</html>
